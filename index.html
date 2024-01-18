@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="score-div">
+        <div class="header">
+          <p class="rock">Rock</p>
+          <p class="paper">paper</p>
+          <p class="scissor">Scirssors</p>
+        </div>
+        <div class="score">
+          <p href="#" class="score-text">Score</p>
+          <p class="score-display" id="score-display">0</p>
+        </div>
+      </div>
+
+      <div class="game-board" id="game-board">
+        <img src="images/bg-triangle.svg" alt="bg-triangle" class="triangle" />
+        <div class="paper-div">
+          <img
+            src="/images/icon-paper.svg"
+            alt="paper"
+            id="paper"
+            class="paper-img"
+            onclick="imageClicked('paper')"
+          />
+        </div>
+        <div class="scissor-div">
+          <img
+            src="/images/icon-scissors.svg"
+            alt="scissor"
+            id="scissors"
+            class="scissor-img"
+            onclick="imageClicked('scissors')"
+          />
+        </div>
+        <div class="rock-div">
+          <img
+            src="/images/icon-rock.svg"
+            alt="rock"
+            id="rock"
+            class="rock-img"
+            onclick="imageClicked('rock')"
+          />
+        </div>
+      </div>
+
+      <a class="rules" id="rules">Rules</a>
+      <div class="pop-up-div" id="pop-up-div">
+        <p class="pop-up"">rules</p>
+        <img src="/images/image-rules.svg" alt="rules" class="popupImg" />
+        <img
+          src="/images/icon-close.svg"
+          alt="close"
+          class="close"
+          id="close"
+        />
+      </div>
+
+      <div class="main-game-board">
+        <div class="your-pick">
+          <h2>you picked</h2>
+          <div class="yourPick-div">
+            <img 
+            class=""
+            onlick="imageClicked('src')"/>
+          </div>
+        </div>
+
+        <div class="results">
+          <h3 class="who-won" id="finalResult">you lose</h3>
+          <a href="index.html" class="retry" id="retry">Play again</a>
+        </div>
+
+        <div class="auto-picked">
+          <h2>The house picked</h2>
+          <div class="opponentPick-div">
+            <img />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+</html>
