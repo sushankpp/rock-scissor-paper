@@ -26,9 +26,9 @@ closeRules.addEventListener('click', () => {
 // console.group(result,retryBtn);
 
 const images = {
-  rock: '/images/icon-rock.svg',
-  paper: '/images/icon-paper.svg',
-  scissors: '/images/icon-scissors.svg',
+  rock: 'images/icon-rock.svg',
+  paper: 'images/icon-paper.svg',
+  scissors: 'images/icon-scissors.svg',
 };
 
 function stylingTheImage(ImageId) {
