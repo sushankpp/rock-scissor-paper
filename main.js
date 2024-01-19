@@ -41,8 +41,8 @@ function stylingTheImage(ImageId) {
   const mobileBackgroundColor = 'rgb(255, 255, 255)';
   const mobileBorderStyle = '0.5rem solid rgb(220, 46, 78)';
 
-  const desktopWidth = '13rem';
-  const desktopHeight = '14rem';
+  const desktopWidth = '12rem';
+  const desktopHeight = '13rem';
   const desktopBackgroundColor = '#fff';
   const desktopBorder = '1.5rem solid';
 
