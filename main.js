@@ -12,6 +12,7 @@ const results = document.querySelector('.results');
 const popUp = document.getElementById('pop-up-div');
 
 let scoreValue = localStorage.getItem('score') || 0;
+scoreElement.innerHTML = scoreValue;
 
 console.log(results);
 
@@ -223,21 +224,22 @@ function decideResult(userChoice, opponentChoice) {
   // Save the score to localStorage
   localStorage.setItem('score', scoreValue);
   console.log('Score saved in localStorage:', scoreValue);
+  resetGame(scoreValue);
 }
 
-function resetGame() {
-  scoreValue = 0;
-  scoreElement.innerHTML = scoreValue;
+function resetGame(value) {
+  // scoreValue = 0;
+  scoreElement.innerHTML = value;
 
   // Remove the score from localStorage
-  localStorage.getItem('score');
+  localStorage.setItem('score', value);
 }
 
 resetGame();
 
 retryBtn.addEventListener('click', (e) => {
   // e.preventDefault();
-  resetGame();
+  resetGame(scoreValue);
 });
 
 decideResult();
